@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F8FF;
+    margin-left: 5px;
+    height: 70vh;
+}
+
+header {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #61A2FC;
+}
+
+.container {
+    width: 60%;
+    margin-left: 15vw;
+    height: 50vh;
+    overflow-y: auto;
+    padding: 30px;
+    border: 5px solid #61A2FC;
+    border-radius: 20px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #D9E4FF;
+    border-radius: 0px 8px 8px 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #61A2FC;
+    border-radius: 0px 8px 8px 0px;
+  }
+.receiver {
+    background: #D9E4FF;
+    float: left;
+    clear: both;
+    border-radius: 20px;
+    padding: 20px;
+    color: #61A2FC;
+ }
+
+.sender {
+    background: #61A2FC;
+    float: right;
+    clear: both;
+    padding: 15px;
+    border-radius: 20px;
+    color: #D9E4FF;
+}
+
+.message {
+    margin-top: 5px;
+}
+
+#send-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+ 
+
+input {
+    height: 7vh;
+    background-color: #D9E4FF;
+    color: #61A2FC;
+    font-size: 1.5em;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    width: 55%;
+    outline: none;
+
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+button {
+    height: 8vh;
+    color: black;
+    background-color: #61A2FC;
+    border-radius: 50vw;
+    border: none;
+    text-align: center;
+    width: 6%;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width :950px) and (min-width:600px){
+    .container {
+        width: 75%;
+        margin-left: 8vw;
+        height: 60vh;
+        padding: 30px;
+        border: 6px solid #61A2FC;
+}
+input {
+    height: 6vh;
+    font-size: 1.5rem;
+    width: 70%;
+    }
+button {
+    height: 6vh;
+    width: 8%;
+    font-size: 1.4rem;
+}
+}
+@media screen and (max-width :600px ) and (min-width:400px){
+    .container {
+        height: 69vh;
+        border: 5px solid #61A2FC;
+    }
+    input {
+        width: 60%;
+    }
+    button {
+        height: 7vh;
+        width: 9%;
+        margin-left: 5px;
+    }
+    
+}
+@media screen and (max-width :400px ) and (min-width:200px){
+    .container {
+        width: 70%;
+        margin-left: 7vw;
+        height: 76vh;
+        border: 5px solid #61A2FC;
+    }
+    input {
+        height: 5vh;
+        font-size: 1.12em;
+        width: 74%;
+     }
+    button {
+        height: 5vh;
+        width: 10%;
+        margin-left: 8px;
+        font-size: 1.3rem;
+    }
+}
